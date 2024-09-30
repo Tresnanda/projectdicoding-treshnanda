@@ -2,11 +2,10 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-import numpy as np
 
 st.caption("I Made Treshnanda Mas")
 
-df = pd.read_csv('hour.csv')
+df = pd.read_csv('../dashboard/hour.csv')
 
 st.title("Bike Sharing Demand Dashboard")
 

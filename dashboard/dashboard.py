@@ -2,10 +2,13 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
+
+file_path = os.path.join(os.path.dirname(__file__), '../dashboard/hour.csv')
 
 st.caption("I Made Treshnanda Mas")
 
-df = pd.read_csv('../dashboard/hour.csv')
+df = pd.read_csv(file_path)
 
 st.title("Bike Sharing Demand Dashboard")
 
